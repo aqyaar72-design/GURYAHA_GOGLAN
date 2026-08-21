@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Payment Receipt | ELITE FURNISHED HOMES
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/receipt.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="receipt-page">
+
+    <div class="receipt-card">
+
+
+        <!-- HEADER -->
+
+        <div class="receipt-header">
+
+            <div class="logo-box">
+                EFH
+            </div>
+
+            <div>
+
+                <h1>
+                    ELITE FURNISHED HOMES
+                </h1>
+
+                <p>
+                    Premium Furnished & Unfurnished Homes
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="receipt-title">
+
+            <span>
+                PAYMENT RECEIPT
+            </span>
+
+            <h2>
+                PAID
+            </h2>
+
+        </div>
+
+
+        <!-- RECEIPT INFO -->
+
+        <div class="receipt-info">
+
+            <div>
+
+                <span>
+                    Receipt Number
+                </span>
+
+                <strong id="receiptNumber">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Payment Date
+                </span>
+
+                <strong id="paymentDate">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- CUSTOMER -->
+
+        <div class="section">
+
+            <h3>
+                Customer Details
+            </h3>
+
+
+            <div class="details-grid">
+
+                <div>
+
+                    <span>
+                        Full Name
+                    </span>
+
+                    <strong id="customerName">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <strong id="customerPhone">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong id="customerEmail">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Home Type
+                    </span>
+
+                    <strong id="homeType">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RENTAL -->
+
+        <div class="section">
+
+            <h3>
+                Rental Details
+            </h3>
+
+
+            <div class="details-grid">
+
+                <div>
+
+                    <span>
+                        Check-in
+                    </span>
+
+                    <strong id="checkIn">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Check-out
+                    </span>
+
+                    <strong id="checkOut">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Adults
+                    </span>
+
+                    <strong id="adults">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Children
+                    </span>
+
+                    <strong id="children">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div class="section">
+
+            <h3>
+                Payment Details
+            </h3>
+
+
+            <div class="payment-row">
+
+                <span>
+                    Monthly Rent
+                </span>
+
+                <strong id="monthlyRent">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="payment-row">
+
+                <span>
+                    Amount Paid
+                </span>
+
+                <strong id="amountPaid">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="payment-row">
+
+                <span>
+                    Payment Method
+                </span>
+
+                <strong id="paymentMethod">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="total-row">
+
+                <span>
+                    TOTAL PAID
+                </span>
+
+                <strong id="totalPaid">
+                    $0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="receipt-footer">
+
+            <h3>
+                Thank You!
+            </h3>
+
+            <p>
+                Thank you for choosing
+                <strong>ELITE FURNISHED HOMES</strong>.
+            </p>
+
+            <p>
+                WhatsApp:
+                +91 79819 77002
+            </p>
+
+            <p>
+                Email:
+                aqyaar72@
+            </p>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="receipt-buttons">
+
+            <button
+                onclick="downloadReceipt()"
+                class="download-btn"
+            >
+
+                Download PDF
+
+            </button>
+
+
+            <button
+                onclick="sendWhatsApp()"
+                class="whatsapp-btn"
+            >
+
+                Send WhatsApp
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/receipt.js"></script>
+
+
+</body>
+
+</html>

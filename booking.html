@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Booking | ELITE FURNISHED HOMES
+    </title>
+
+    <meta
+        name="description"
+        content="Book your furnished home with Elite Furnished Homes."
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="image/logo.jpeg"
+                alt="Elite Furnished Homes"
+            >
+
+            <div>
+
+                <strong>
+                    ELITE
+                </strong>
+
+                <span>
+                    FURNISHED HOMES
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a
+                href="booking.html"
+                class="active"
+            >
+                Booking
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="booking.html"
+                class="nav-button"
+            >
+                Book Now
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     BOOKING HERO
+========================================= -->
+
+<section class="booking-hero">
+
+    <div class="container">
+
+        <span>
+            ELITE FURNISHED HOMES
+        </span>
+
+        <h1>
+            Book Your Furnished Home
+        </h1>
+
+        <p>
+            Dooro guriga kugu habboon,
+            geli taariikhda aad degi doonto,
+            kadibna noo soo dir booking-kaaga.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BOOKING SECTION
+========================================= -->
+
+<section class="booking-section">
+
+    <div class="container booking-layout">
+
+
+        <!-- =====================================
+             FORM
+        ====================================== -->
+
+        <div class="booking-form-box">
+
+
+            <div class="booking-heading">
+
+                <span>
+                    RESERVATION
+                </span>
+
+                <h2>
+                    Booking Details
+                </h2>
+
+                <p>
+                    Fadlan si sax ah u buuxi xogta hoose.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 BOOKING FORM
+            ================================== -->
+
+            <form id="bookingForm">
+
+
+                <!-- HOME TYPE -->
+
+                <div class="form-group">
+
+                    <label for="homeType">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Choose Your Home
+
+                    </label>
+
+
+                    <select
+                        id="homeType"
+                        required
+                    >
+
+                        <option value="">
+                            Select Home Type
+                        </option>
+
+                        <option value="1 Bedroom + Living Room - $130 / Month">
+                            1 Bedroom + Living Room — $250 / Month
+                        </option>
+
+                        <option value="2 Bedrooms + Living Room - $400 / Month">
+                            2 Bedrooms + Living Room — $400 / Month
+                        </option>
+
+                        <option value="3 Bedrooms + Living Room - $600 / Month">
+                            3 Bedrooms + Living Room — $600 / Month
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- CHECK IN / CHECK OUT -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="checkIn">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            Check In
+
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="checkIn"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="checkOut">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            Check Out
+
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="checkOut"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="fullName">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        Full Name
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PHONE / WHATSAPP -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Phone Number
+
+                        </label>
+
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+91 79819 77002"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="whatsapp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp Number
+
+                        </label>
+
+
+                        <input
+                            type="tel"
+                            id="whatsapp"
+                            placeholder="+91 79819 77002"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        Email Address
+
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- ADULTS / CHILDREN -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="adults">
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                            Adults
+
+                        </label>
+
+
+                        <select id="adults">
+
+                            <option value="1">
+                                1 Adult
+                            </option>
+
+                            <option value="2">
+                                2 Adults
+                            </option>
+
+                            <option value="3">
+                                3 Adults
+                            </option>
+
+                            <option value="4">
+                                4 Adults
+                            </option>
+
+                            <option value="5">
+                                5+ Adults
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="children">
+
+                            <i class="fa-solid fa-child"></i>
+
+                            Children
+
+                        </label>
+
+
+                        <select id="children">
+
+                            <option value="0">
+                                0 Children
+                            </option>
+
+                            <option value="1">
+                                1 Child
+                            </option>
+
+                            <option value="2">
+                                2 Children
+                            </option>
+
+                            <option value="3">
+                                3 Children
+                            </option>
+
+                            <option value="4">
+                                4+ Children
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SPECIAL REQUEST -->
+
+                <div class="form-group">
+
+                    <label for="specialRequest">
+
+                        <i class="fa-regular fa-comment"></i>
+
+                        Special Request
+
+                    </label>
+
+
+                    <textarea
+                        id="specialRequest"
+                        rows="5"
+                        placeholder="Tell us anything we should know..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- CONFIRMATION -->
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        required
+                    >
+
+                    <span>
+
+                        I confirm that the information
+                        provided above is correct.
+
+                    </span>
+
+                </label>
+
+
+
+                <!-- MESSAGE -->
+
+                <div
+                    id="bookingMessage"
+                    class="booking-message"
+                ></div>
+
+
+
+                <!-- BOOK NOW -->
+
+                <button
+                    type="submit"
+                    class="book-now-button"
+                >
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    Book Now
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- =====================================
+             RIGHT SIDE
+        ====================================== -->
+
+        <aside class="booking-side">
+
+
+            <div class="side-title">
+
+                <span>
+                    ELITE FURNISHED HOMES
+                </span>
+
+                <h2>
+
+                    Your Comfort
+
+                    <strong>
+                        Starts Here.
+                    </strong>
+
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Waxaan kuu haynaa guryo firaashan
+                oo raaxo leh oo ku habboon degitaan
+                muddo gaaban ama dheer.
+
+            </p>
+
+
+
+            <!-- PRICES -->
+
+            <div class="side-prices">
+
+
+                <div>
+
+                    <span>
+                        1 Bedroom + Living Room
+                    </span>
+
+                    <strong>
+                        $250
+                    </strong>
+
+                    <small>
+                        / Month
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        2 Bedrooms + Living Room
+                    </span>
+
+                    <strong>
+                        $400
+                    </strong>
+
+                    <small>
+                        / Month
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        3 Bedrooms + Living Room
+                    </span>
+
+                    <strong>
+                        $600
+                    </strong>
+
+                    <small>
+                        / Month
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="https://wa.me/917981977002"
+                target="_blank"
+                class="booking-whatsapp"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Chat With Us On WhatsApp
+
+            </a>
+
+
+            <p class="whatsapp-number">
+
+                +91 79819 77002
+
+            </p>
+
+        </aside>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div>
+
+            <h3>
+                ELITE FURNISHED HOMES
+            </h3>
+
+            <p>
+                Premium furnished homes for
+                comfortable monthly living.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="booking.html">
+                Booking
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                📞 +91 79819 77002
+            </p>
+
+            <p>
+                ✉️ aqyaar72@gmail.com
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 ELITE FURNISHED HOMES.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     SUPABASE
+========================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+<!-- =========================================
+     BOOKING JAVASCRIPT
+========================================= -->
+
+<script src="js/booking.js"></script>
+
+
+</body>
+
+</html>

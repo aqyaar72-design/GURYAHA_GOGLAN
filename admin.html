@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Admin Dashboard | ELITE FURNISHED HOMES
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body class="admin-body">
+
+
+<!-- =========================================
+     ADMIN LOGIN
+========================================= -->
+
+<section
+    id="adminLogin"
+    class="admin-login-section"
+>
+
+    <div class="admin-login-box">
+
+        <div class="admin-logo">
+
+            <i class="fa-solid fa-house"></i>
+
+        </div>
+
+
+        <span>
+            ELITE FURNISHED HOMES
+        </span>
+
+
+        <h1>
+            Admin Login
+        </h1>
+
+
+        <p>
+            Sign in to manage your bookings.
+        </p>
+
+
+        <form id="loginForm">
+
+
+            <div class="admin-input">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Admin Email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="admin-input">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Password"
+                    required
+                >
+
+            </div>
+
+
+            <div
+                id="loginMessage"
+                class="booking-message"
+            ></div>
+
+
+            <button
+                type="submit"
+                class="admin-login-button"
+            >
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                Login
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ADMIN DASHBOARD
+========================================= -->
+
+<section
+    id="adminDashboard"
+    class="admin-dashboard"
+    style="display:none;"
+>
+
+
+    <!-- HEADER -->
+
+    <header class="admin-header">
+
+        <div>
+
+            <span>
+                ELITE FURNISHED HOMES
+            </span>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+        </div>
+
+
+        <button
+            id="logoutButton"
+            class="logout-button"
+        >
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </header>
+
+
+
+    <main class="admin-container">
+
+
+        <!-- =====================================
+             STATISTICS
+        ====================================== -->
+
+        <div class="admin-stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <span>
+                    Total Bookings
+                </span>
+
+                <strong id="totalBookings">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <span>
+                    Pending
+                </span>
+
+                <strong id="pendingBookings">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <span>
+                    Confirmed
+                </span>
+
+                <strong id="confirmedBookings">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <span>
+                    Cancelled
+                </span>
+
+                <strong id="cancelledBookings">
+                    0
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             BOOKINGS
+        ====================================== -->
+
+        <div class="bookings-card">
+
+
+            <div class="bookings-header">
+
+                <div>
+
+                    <span>
+                        RESERVATIONS
+                    </span>
+
+                    <h2>
+                        All Bookings
+                    </h2>
+
+                </div>
+
+
+                <button
+                    id="refreshBookings"
+                    class="refresh-button"
+                >
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                    Refresh
+
+                </button>
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Customer
+                            </th>
+
+                            <th>
+                                Phone
+                            </th>
+
+                            <th>
+                                Home
+                            </th>
+
+                            <th>
+                                Check-in
+                            </th>
+
+                            <th>
+                                Check-out
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="bookingsTable">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                Loading bookings...
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</section>
+
+
+
+<!-- =========================================
+     SUPABASE
+========================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+<!-- =========================================
+     ADMIN JAVASCRIPT
+========================================= -->
+
+<script src="js/admin.js"></script>
+
+
+</body>
+
+</html>
